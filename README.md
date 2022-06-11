@@ -1,0 +1,2 @@
+# subsNnotify
+Simple subscription app
