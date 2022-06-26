@@ -6,29 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario Theos Cocina</title>
     <link rel="stylesheet" href="./static/styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <p class="test"> Formulario para ingredientes de cocina</p>
-    <form action="/action_page.php">
-        <label for="fname">Nombre:</label>
-        <input type="text" id="fname" name="fname" placeholder="Ingrese su nombre aqui">
-        <label for="lname">Apellido:</label>
-        <input type="text" id="lname" name="lname" placeholder="Ingrese su apelido aqui">
-        <label for="email">Correo electronico:</label>
-        <input type="email" id="email" name="email" placeholder="Ingrese su email aqui">
-        <label for="phone">Numero telefono:</label>
-        <input type="phone" id="phone" name="phone" placeholder="Ingrese su telefono aqui">
-        <p>Seleccione tipo de ingrediente:</p>
-        <input type="radio" id="salado" name="fav_language" value="HTML">
-        <label for="salado">Salado</label>
-        <input type="radio" id="dulce" name="fav_language" value="HTML">
-        <label for="dulce">Dulce</label>
-        <input type="radio" id="refrrescos" name="fav_language" value="HTML">
-        <label for="refrescos">Refrescos</label>
-        <input type="radio" id="confites" name="fav_language" value="HTML">
-        <label for="confites">Confites</label>
-        <input type="submit" value="Submit">
+    <div class="wrapper">
+        <img src="./static/img/theos-logo.png" alt="Logo Theos Place" class="logo-img"/>
+        <!--<img src="./static/img/icons/form.png" alt="Ícono de un formulario"/>-->
+
+    <form action="#" id="form">
+        <div class="info">
+            <label for="fname">Nombre:</label>
+            <input type="text" id="fname" name="fname" placeholder="Nombre" required>
+    
+            <label for="lname">Apellido:</label>
+            <input type="text" id="lname" name="lname" placeholder="Apellido" required>
+    
+            <label for="email">Correo electronico:</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+    
+            <label for="phone">Numero telefono:</label>
+            <input type="phone" id="phone" name="phone" placeholder="Teléfono" required>
+        </div>
+
+        <div class="ingredients">
+            <div class="ingredient-container">
+                <div class="ingredient-radio">
+                    <label for="salado" class="salty">Salado</label>
+                    <input type="radio" id="salado" name="comida" value="salado">
+                </div>
+                <img src="./static/img/icons/salty.png" alt="Ícono de ingredientes salados" class="ingredients-icon"/>
+            </div>
+
+            <div class="ingredient-container">
+                <div class="ingredient-radio">
+                    <label for="dulce" class="sweet">Dulce</label>
+                    <input type="radio" id="dulce" name="comida" value="dulce">
+                </div>
+                <img src="./static/img/icons/sweet.png" alt="Ícono de ingredientes salados" class="ingredients-icon"/>
+            </div>
+
+            <div class="ingredient-container">
+                <div class="ingredient-radio">
+                    <label for="refresco" class="drink">Refrescos</label>
+                    <input type="radio" id="refresco" name="comida" value="refresco">
+                </div>
+                <img src="./static/img/icons/drinks.png" alt="Ícono de ingredientes salados" class="ingredients-icon"/>
+            </div>
+
+            <div class="ingredient-container">
+                <div class="ingredient-radio">   
+                    <label for="snacks" class="candy">Snacks</label>
+                    <input type="radio" id="snacks" name="comida" value="snacks">
+                </div>
+                <img src="./static/img/icons/snacks.png" alt="Ícono de ingredientes salados" class="ingredients-icon"/>
+            </div>
+        </div>
+
+        <input type="submit" value="Submit" class="form-submit-button">
       </form> 
-   <script src="./static/Scripts/main.js"></script> 
+    </div>
+
+   <script type="module" src="./static/Scripts/main.js"></script>
 </body>
 </html>
