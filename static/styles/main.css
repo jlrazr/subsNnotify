@@ -1,12 +1,5 @@
-p {
-    font-size: 24px;
-}
-p.test {
-    font-size: 36px;
-    color: blue;
-}
-
-#fname {
-    font: size 30px;
-    color: aqua;
-}
+@import "reset.css";
+@import "vars.css";
+@import "mobile.css";
+@import "tablet.css";
+@import "desktop.css";
