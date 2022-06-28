@@ -12,7 +12,7 @@ form.addEventListener("submit", (event) =>{
     let collectedData = collector();
     let newPerson = new Volunteer(... collectedData);
 
-    //console.log(newPerson);
+    console.log(newPerson);
 
     alert("Se ha realizado la inscripción");
     form.submit();
