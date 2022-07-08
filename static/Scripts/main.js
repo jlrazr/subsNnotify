@@ -12,8 +12,11 @@ form.addEventListener("submit", (event) =>{
     let collectedData = collector();
     let newPerson = new Volunteer(... collectedData);
 
-    console.log(newPerson);
+    fetch("destinationURL", {
+        method: "POST",
+        body: JSON.stringify(newPerson)})
+        .then(alert("Se ha realizado la inscripción"))
+        .catch((error) => console.error(`Ha habido un error: ${error}`));
 
-    alert("Se ha realizado la inscripción");
     form.submit();
 })
